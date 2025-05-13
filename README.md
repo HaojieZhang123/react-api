@@ -3,9 +3,11 @@
 
 ## Esercizio
 E’ arrivato il momento di mettere insieme i concetti appresi creiamo una piccola app che ci mostri un elenco di attori o attrici.
-Usate uno di questi due endpoint, a piacimento:
-Lista di Attrici: https://lanciweb.github.io/demo/api/actresses/
-Lista di Attori: https://lanciweb.github.io/demo/api/actors/
+Usate **uno di questi due endpoint**, a piacimento:
+
+- Lista di Attrici: https://lanciweb.github.io/demo/api/actresses/
+
+- Lista di Attori: https://lanciweb.github.io/demo/api/actors/
 
 ### MILESTONE 1
 Al caricamento dell'applicazione, recuperiamo la lista degli attori e delle attrici dalle API e stampiamoli in console.
