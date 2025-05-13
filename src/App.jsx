@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+
+import Cards from './components/Cards'
+
 const actorEndpoint = 'https://lanciweb.github.io/demo/api/actors/'
 const actressEndpoint = 'https://lanciweb.github.io/demo/api/actresses/'
 
@@ -43,7 +46,13 @@ function App() {
 
   return (
     <>
-      <h1>Hello World!</h1>
+      <h1>React API</h1>
+
+      <ul>
+        {actors.map((actor) => (
+          <Cards key={`actor-${actor.id}`} actor={actor} />
+        ))}
+      </ul>
     </>
   )
 }
