@@ -50,9 +50,15 @@ function App() {
 
       <div className="container">
         <ul className='card-container'>
-          {actors.map((actor) => (
-            <Cards key={`actor-${actor.id}`} actor={actor} />
+
+          {actors.map((element) => (
+            <Cards key={`actor-${element.id}`} element={element} />
           ))}
+
+          {actresses.map((element) => (
+            <Cards key={`actress-${element.id}`} element={element} />
+          ))}
+
         </ul>
       </div>
     </>
