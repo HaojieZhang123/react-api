@@ -48,11 +48,13 @@ function App() {
     <>
       <h1>React API</h1>
 
-      <ul>
-        {actors.map((actor) => (
-          <Cards key={`actor-${actor.id}`} actor={actor} />
-        ))}
-      </ul>
+      <div className="container">
+        <ul className='card-container'>
+          {actors.map((actor) => (
+            <Cards key={`actor-${actor.id}`} actor={actor} />
+          ))}
+        </ul>
+      </div>
     </>
   )
 }

@@ -5,17 +5,22 @@ const Cards = ({ actor }) => {
         <>
             <li>
                 <div className="card">
-                    <img src={actor.image} alt={actor.name} />
-                    <h3>{actor.name}</h3>
-                    <p>{actor.birth_year}</p>
-                    <p>{actor.nationality}</p>
-                    <p>{actor.biography}</p>
-                    <h3>Awards:</h3>
-                    <ul>
+                    <div className="card-img">
+                        <img src={actor.image} alt={actor.name} />
+                    </div>
+                    <div className="card-info">
+                        <h3>{actor.name}</h3>
+                        <p>{actor.birth_year}</p>
+                        <p>{actor.nationality}</p>
+                        <p>{actor.biography}</p>
+                    </div>
+                    <div className="card-award">
+                        <h3>Awards:</h3>
                         {actor.awards.map((award, index) => (
-                            <li key={index}>{award}</li>
+                            <p key={index}>{award}</p>
                         ))}
-                    </ul>
+                    </div>
+
                 </div>
             </li>
         </>
